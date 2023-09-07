@@ -1,0 +1,1 @@
+**NOTE:** General procedure to install bioinformatic software: install in '/usr/local/bioinfo' and create softlink to '/usr/local/bin' which is on the path.
