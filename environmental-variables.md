@@ -45,8 +45,36 @@ source ~/.bashrc
 echo $MY_VAR
 ```
 
-For example, to create an environmental variable named MY_VAR with a value of "example_value," add the following line to ~/.bashrc:
 ### System wide (all users)  
+
+The best way to set a system-wide environmental variable for all users on a Unix-like operating system, such as Linux, is to use the **/etc/environment** file. This file is specifically designed for configuring system-wide environmental variables that should be available to all users and processes. Here's how you can set a system-wide environmental variable using **/etc/environment**:  
+
+  1. Open a terminal with administrative privileges (you may need to use the **sudo** command).
+  2. Use a text editor to open the **/etc/environment** file. For example, you can use **sudo** with a text editor like nano:
+```bash
+sudo nano /etc/environment
+```
+  3. Add your environmental variable in the format **VARNAME="value"**.
+     Replace VARNAME with the name of your variable and **"value"** with the desired value
+     For example:
+```bash
+MY_VARIABLE="system-wide-value"
+```
+  4. Save the file and exit the text editor.
+  5. To apply the changes, you may need to reboot your system, or you can reload the environment variables for the current session
+     and all new sessions by running:
+```bash
+source /etc/environment
+```
+
+Now, the **MY_VARIABLE** environmental variable will be set system-wide and will be available to all users and processes on the system  
+Users can access this variable just like any other environmental variable. 
+
+Keep in mind that changes to **/etc/environment** require administrative privileges, and they will affect all users and processes on the system.  
+Ensure that the variable name you choose does not conflict with any existing system variables to avoid unexpected behavior.  
+
+Using **/etc/environment** is the recommended way to set system-wide environmental variables because it provides a clean and standardized approach for configuring system-wide settings that should be accessible to all users and processes.
+
 
 ## Code  
 
