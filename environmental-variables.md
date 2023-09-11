@@ -85,5 +85,5 @@ export MY_VAR="example_value"
 
 ### system wide   
 ```bash
-MY_VARIABLE="system-wide-value"
+echo "MY_VARIABLE=\"system-wide-value\"" >> /etc/environment
 ```
