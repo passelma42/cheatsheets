@@ -8,7 +8,7 @@ Here's how you can create a symbolic link for an executable file:
 
 ### One By One  
 
-  0. Move to the directory where you need the symbolic links first (your destination folder)
+  0. Move FIRST to the directory where you need the symbolic links (your destination folder)
   1. **Locate the Executable File**: Make sure you know the full path to the executable file you want to create a symbolic link for.
      For this example, let's assume your executable file is located at **/path/to/your/executable**.
   2. **Create the Symbolic Link**: Use the **ln** command with the **-s** option to create a symbolic link.
