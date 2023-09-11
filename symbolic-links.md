@@ -55,3 +55,7 @@ find /path/to/source_folder -type f -executable -exec sh -c 'ln -s "$0" "/path/t
 ```bash
 ln -s /path/to/your/executable /usr/local/bin/linkname
 ```
+
+```bash
+find /path/to/source_folder -type f -executable -exec sh -c 'ln -s "$0" "/path/to/destination_folder/$(basename "$0")_link"' {} \;
+``` 
