@@ -48,7 +48,7 @@ find /path/to/source_folder -type f -executable -exec sh -c 'ln -s "$0" "/path/t
       - **sh -c 'ln -s "$0" "/usr/local/bin/$(basename "$0")_link"' {}** is a shell command that takes the found executable file ({}) and uses it to create a              symbolic link with the desired link name.  
       - **basename "$0"** extracts the filename without the path from the executable file.  
       - **"$(basename "$0")_link"** appends "_link" to the filename to create the link name.  
-      - The symbolic link is created in the **/usr/local/bin** directory.  
+      - The symbolic link is created in the **/path/to/destination_folder/** directory.  
 
 ## Code  
 
