@@ -23,20 +23,20 @@ Permanent environmental variables are useful for configuring various aspects of 
 
 To create a permanent environmental variable in your ~/.bashrc file in Bash, you can follow these steps:  
   1. Open a terminal window.
-  2. Use a text editor to open your ~/.bashrc file. You can use a command-line text editor like nano, vim, or gedit.
-     For example, to open it with nano, you can use the following command:  
+  2. Use a text editor to open your **~/.bashrc** file. You can use a command-line text editor like **nano**, **vim**, or **gedit**.
+     For example, to open it with **nano**, you can use the following command:  
 ```bash
 nano ~/.bashrc
 ```
-  3. Scroll to the bottom of the ~/.bashrc file to add your environmental variable
-     Environmental variables are typically written in the format export VARIABLE_NAME="variable_value".
-     Replace VARIABLE_NAME with the name of your variable and variable_value with the desired value.
-     For example, to create an environmental variable named MY_VAR with a value of "example_value," add the following line to ~/.bashrc:
+  3. Scroll to the bottom of the **~/.bashrc** file to add your environmental variable
+     Environmental variables are typically written in the format **export VARIABLE_NAME="variable_value"**.
+     Replace **VARIABLE_NAME** with the name of your variable and variable_value with the desired value.
+     For example, to create an environmental variable named **MY_VAR** with a value of "example_value," add the following line to **~/.bashrc**:
 ```bash 
 export MY_VAR="example_value"
 ```
-  4. Save the file and exit the text editor. In nano, you can do this by pressing Ctrl + O, then pressing Enter to confirm, followed by Ctrl + X to exit.
-  5. To make the changes take effect, you can either close and reopen your terminal or source the ~/.bashrc file using the following command:
+  4. Save the file and exit the text editor. In **nano**, you can do this by pressing **Ctrl + O**, then pressing **Enter** to confirm, followed by **Ctrl + X** to exit.
+  5. To make the changes take effect, you can either close and reopen your terminal or source the **~/.bashrc** file using the following command:
 ```bash
 source ~/.bashrc
 ```
@@ -78,3 +78,12 @@ Using **/etc/environment** is the recommended way to set system-wide environment
 
 ## Code  
 
+### bashrc  
+```bash 
+export MY_VAR="example_value"
+```
+
+### system wide   
+```bash
+MY_VARIABLE="system-wide-value"
+```
