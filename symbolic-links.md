@@ -39,7 +39,7 @@ If you want to create symbolic links for all executable files in one folder to a
 you can achieve it in a single command using a combination of find, xargs, and ln. Here's how you can do it:  
 ```bash
 find /path/to/source_folder -type f -executable -exec sh -c 'ln -s "$0" "/path/to/destination_folder/$(basename "$0")_link"' {} \;
-```
+```  
 
   1. **find /path/to/source_folder -type f -executable**: This part of the command uses the find command to locate all executable files **(-type f -executable)**         within the specified source folder (/path/to/source_folder).
   2. **-exec sh -c 'ln -s "$0" "/usr/local/bin/$(basename "$0")_link"' {} \;**: For each executable file found
