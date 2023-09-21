@@ -1,9 +1,9 @@
 # Untar  
 
-##Goal  
+## Goal  
 To unpack a tar.gz (also known as a .tar.gz or .tgz) file to another folder, you can use the tar command in a terminal or command prompt.  
 
-##Workflow  
+## Workflow  
 
   1. Open a terminal or command prompt on your computer.  
   2. Navigate to the folder where the tar.gz file is located using the cd command. For example, if your tar.gz file is on the desktop and you want to extract it to a folder named "my_folder,"  
